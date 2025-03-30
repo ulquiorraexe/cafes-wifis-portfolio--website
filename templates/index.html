@@ -1,0 +1,297 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Cafés and Wifis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/static/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="/static/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="{{ url_for('home') }}" class="logo">
+									<span class="symbol"><img src="/static/images/logo.svg" alt=""/></span><span class="title">Hercules</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="{{ url_for('home') }}">Home</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<header>
+								<h2>Here is some cafés and information about them. Please enjoy!</h2>
+							</header>
+							<section class="tiles">
+								<article class="style1">
+									<span class="image">
+										<img src="{{ table[0][3] }}" alt="" width="500px" height="300px"/>
+									</span>
+									<a href="{{ url_for('one') }}"  class="mloc">
+										<h2>{{ table[0][1]}}</h2>
+										<div class="content">
+											<p><a href="{{ table[0][2] }}" class="loc" target="_blank">Click here to see Google Maps location!</a></p>
+										</div>
+									</a>
+								</article>
+								<article class="style2">
+									<span class="image">
+										<img src="{{ table[1][3] }}" alt="" width="500px" height="300px"/>
+									</span>
+									<a href="{{ url_for('two') }}"  class="mloc">
+										<h2>{{ table[1][1]}}</h2>
+										<div class="content">
+											<a href="{{ table[1][2] }}" class="loc" target="_blank">Click here to see Google Maps location!</a>
+										</div>
+									</a>
+								</article>
+								<article class="style3">
+									<span class="image">
+										<img src="{{ table[2][3] }}" alt="" width="500px" height="300px"/>
+									</span>
+									<a href="{{ url_for('three') }}"  class="mloc">
+										<h2>{{ table[2][1]}}</h2>
+										<div class="content">
+											<a href="{{ table[2][2] }}" class="loc" target="_blank">Click here to see Google Maps location!</a>
+										</div>
+									</a>
+								</article>
+								<article class="style4">
+									<span class="image">
+										<img src="{{ table[3][3] }}" alt="" width="500px" height="300px"/>
+									</span>
+									<a href="{{ url_for('four') }}"  class="mloc">
+										<h2>{{ table[3][1]}}</h2>
+										<div class="content">
+											<a href="{{ table[3][2] }}" class="loc" target="_blank">Click here to see Google Maps location!</a>
+										</div>
+									</a>
+								</article>
+								<article class="style5">
+									<span class="image">
+										<img src="{{ table[4][3] }}" alt="" width="500px" height="300px"/>
+									</span>
+									<a href="{{ url_for('five') }}"  class="mloc">
+										<h2>{{ table[4][1]}}</h2>
+										<div class="content">
+											<a href="{{ table[4][2] }}" class="loc" target="_blank">Click here to see Google Maps location!</a>
+										</div>
+									</a>
+								</article>
+								<article class="style6">
+									<span class="image">
+										<img src="{{ table[5][3] }}" alt="" width="500px" height="300px"/>
+									</span>
+									<a href="{{ url_for('six') }}"  class="mloc">
+										<h2>{{ table[5][1]}}</h2>
+										<div class="content">
+											<a href="{{ table[5][2] }}" class="loc" target="_blank">Click here to see Google Maps location!</a>
+										</div>
+									</a>
+								</article>
+								<article class="style2">
+									<span class="image">
+										<img src="{{ table[6][3] }}" alt="" width="500px" height="300px"/>
+									</span>
+									<a href="{{ url_for('seven') }}"  class="mloc">
+										<h2>{{ table[6][1]}}</h2>
+										<div class="content">
+											<a href="{{ table[6][2] }}" class="loc" target="_blank">Click here to see Google Maps location!</a>
+										</div>
+									</a>
+								</article>
+								<article class="style3">
+									<span class="image">
+										<img src="{{ table[7][3] }}" alt="" width="500px" height="300px"/>
+									</span>
+									<a href="{{ url_for('eight') }}"  class="mloc">
+										<h2>{{ table[7][1]}}</h2>
+										<div class="content">
+											<a href="{{ table[7][2] }}" class="loc" target="_blank">Click here to see Google Maps location!</a>
+										</div>
+									</a>
+								</article>
+								<article class="style1">
+									<span class="image">
+										<img src="{{ table[8][3] }}" alt="" width="500px" height="300px"/>
+									</span>
+									<a href="{{ url_for('nine') }}"  class="mloc">
+										<h2>{{ table[8][1]}}</h2>
+										<div class="content">
+											<a href="{{ table[8][2] }}" class="loc" target="_blank">Click here to see Google Maps location!</a>
+										</div>
+									</a>
+								</article>
+								<article class="style5">
+									<span class="image">
+										<img src="{{ table[9][3] }}" alt="" width="500px" height="300px"/>
+									</span>
+									<a href="{{ url_for('ten') }}"  class="mloc">
+										<h2>{{ table[9][1]}}</h2>
+										<div class="content">
+											<a href="{{ table[9][2] }}" class="loc" target="_blank">Click here to see Google Maps location!</a>
+										</div>
+									</a>
+								</article>
+								<article class="style6">
+									<span class="image">
+										<img src="{{ table[10][3] }}" alt="" width="500px" height="300px"/>
+									</span>
+									<a href="{{ url_for('eleven') }}"  class="mloc">
+										<h2>{{ table[10][1]}}</h2>
+										<div class="content">
+											<a href="{{ table[10][2] }}" class="loc" target="_blank">Click here to see Google Maps location!</a>
+										</div>
+									</a>
+								</article>
+								<article class="style5">
+									<span class="image">
+										<img src="{{ table[11][3] }}" alt="" width="500px" height="300px"/>
+									</span>
+									<a href="{{ url_for('twelve') }}"  class="mloc">
+										<h2>{{ table[11][1]}}</h2>
+										<div class="content">
+											<a href="{{ table[11][2] }}" class="loc" target="_blank">Click here to see Google Maps location!</a>
+										</div>
+									</a>
+								</article>
+								<article class="style3">
+									<span class="image">
+										<img src="{{ table[12][3] }}" alt="" width="500px" height="300px"/>
+									</span>
+									<a href="{{ url_for('thirteen') }}"  class="mloc">
+										<h2>{{ table[12][1]}}</h2>
+										<div class="content">
+											<a href="{{ table[12][2] }}" class="loc" target="_blank">Click here to see Google Maps location!</a>
+										</div>
+									</a>
+								</article>
+								<article class="style1">
+									<span class="image">
+										<img src="{{ table[13][3] }}" alt="" width="500px" height="300px"/>
+									</span>
+									<a href="{{ url_for('fourteen') }}"  class="mloc">
+										<h2>{{ table[13][1]}}</h2>
+										<div class="content">
+											<a href="{{ table[13][2] }}" class="loc" target="_blank">Click here to see Google Maps location!</a>
+										</div>
+									</a>
+								</article>
+								<article class="style2">
+									<span class="image">
+										<img src="{{ table[14][3] }}" alt="" width="500px" height="300px"/>
+									</span>
+									<a href="{{ url_for('fifteen') }}"  class="mloc">
+										<h2>{{ table[14][1]}}</h2>
+										<div class="content">
+											<a href="{{ table[14][2] }}" class="loc" target="_blank">Click here to see Google Maps location!</a>
+										</div>
+									</a>
+								</article>
+								<article class="style4">
+									<span class="image">
+										<img src="{{ table[15][3] }}" alt="" width="500px" height="300px"/>
+									</span>
+									<a href="{{ url_for('sixteen') }}"  class="mloc">
+										<h2>{{ table[15][1]}}</h2>
+										<div class="content">
+											<a href="{{ table[15][2] }}" class="loc" target="_blank">Click here to see Google Maps location!</a>
+										</div>
+									</a>
+								</article>
+								<article class="style6">
+									<span class="image">
+										<img src="{{ table[16][3] }}" alt="" width="500px" height="300px"/>
+									</span>
+									<a href="{{ url_for('seventeen') }}"  class="mloc">
+										<h2>{{ table[16][1]}}</h2>
+										<div class="content">
+											<a href="{{ table[16][2] }}" class="loc" target="_blank">Click here to see Google Maps location!</a>
+										</div>
+									</a>
+								</article>
+								<article class="style1">
+									<span class="image">
+										<img src="{{ table[17][3] }}" alt="" width="500px" height="300px"/>
+									</span>
+									<a href="{{ url_for('eighteen') }}"  class="mloc">
+										<h2>{{ table[17][1]}}</h2>
+										<div class="content">
+											<a href="{{ table[17][2] }}" class="loc" target="_blank">Click here to see Google Maps location!</a>
+										</div>
+									</a>
+								</article>
+								<article class="style2">
+									<span class="image">
+										<img src="{{ table[18][3] }}" alt="" width="500px" height="300px"/>
+									</span>
+									<a href="{{ url_for('nineteen') }}"  class="mloc">
+										<h2>{{ table[18][1]}}</h2>
+										<div class="content">
+											<a href="{{ table[18][2] }}" class="loc" target="_blank">Click here to see Google Maps location!</a>
+										</div>
+									</a>
+								</article>
+								<article class="style3">
+									<span class="image">
+										<img src="{{ table[19][3] }}" alt="" width="500px" height="300px"/>
+									</span>
+									<a href="{{ url_for('twenty') }}"  class="mloc">
+										<h2>{{ table[19][1]}}</h2>
+										<div class="content">
+											<a href="{{ table[19][2] }}" class="loc" target="_blank">Click here to see Google Maps location!</a>
+										</div>
+									</a>
+								</article>
+								<article class="style4">
+									<span class="image">
+										<img src="{{ table[20][3] }}" alt="" width="500px" height="300px"/>
+									</span>
+									<a href="{{ url_for('twenty_one') }}"  class="mloc">
+										<h2>{{ table[20][1]}}</h2>
+										<div class="content">
+											<a href="{{ table[20][2] }}" class="loc" target="_blank">Click here to see Google Maps location!</a>
+										</div>
+									</a>
+								</article>
+							</section>
+						</div>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="/static/assets/js/jquery.min.js"></script>
+			<script src="/static/assets/js/browser.min.js"></script>
+			<script src="/static/assets/js/breakpoints.min.js"></script>
+			<script src="/static/assets/js/util.js"></script>
+			<script src="/static/assets/js/main.js"></script>
+
+	</body>
+</html>
